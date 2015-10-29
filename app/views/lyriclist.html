@@ -1,0 +1,14 @@
+<section id="lyricList">
+  <div class="container">
+    <div class="row">
+      <ul>
+        <li ng-click="getTheGenreIndex($index)" ng-repeat="genre in genres">
+          {{genre}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div ng-repeat="lyric in lyricsList">
+    Artist: {{lyric.artist}} - Title: {{lyric.title}} - Price: {{lyric.price | number : 2}}$
+  </div>
+</section>

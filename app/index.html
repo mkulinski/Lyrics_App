@@ -35,6 +35,16 @@
 </head>
 
 <body id="page-top">
+    <header>
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1>Buy and Sell Original Song Lyrics</h1>
+          <hr>
+          <a href="#lyricList" class="btn btn-primary btn-xl">Buy Lyrics</a>
+          <a href="#about" class="btn btn-primary btn-xl">Sell Lyrics</a>
+        </div>
+      </div>
+    </header>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -71,16 +81,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Buy and Sell Original Song Lyrics</h1>
-                <hr>
-                <a href="#about" class="btn btn-primary btn-xl">Buy Lyrics</a>
-                <a href="#about" class="btn btn-primary btn-xl">Sell Lyrics</a>
-            </div>
-        </div>
-    </header>
+
 
     <div class="main-container" ng-view></div>
 
@@ -115,6 +116,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <!--Controllers-->
+    <script src="scripts/controllers/lyriclist.js"></script>
+    <script src="scripts/controllers/main.js"></script>
 
 </body>
 

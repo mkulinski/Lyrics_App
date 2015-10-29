@@ -24,6 +24,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/lyricList', {
+        templateUrl: 'views/lyriclist.html',
+        controller: 'LyriclistCtrl',
+        controllerAs: 'lyricList'
+      })
       .otherwise({
         redirectTo: '/'
       });
