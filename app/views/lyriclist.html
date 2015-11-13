@@ -1,14 +1,26 @@
 <section id="lyricList">
   <div class="container">
     <div class="row">
-      <ul>
-        <li ng-click="getTheGenreIndex($index)" ng-repeat="genre in genres">
-          {{genre}}
-        </li>
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">All</a></li>
+        <li ng-click="getTheGenreIndex($index)" ng-repeat="genre in genres" role="presentation"><a href="#">{{genre}}</a></li>
       </ul>
     </div>
   </div>
-  <div ng-repeat="lyric in lyricsList">
-    Artist: {{lyric.artist}} - Title: {{lyric.title}} - Price: {{lyric.price | number : 2}}$
+  <div class="table-responsive lyricListTable">
+    <table class="table table-hover">
+      <thead>
+      <th>Artist</th>
+      <th>Title</th>
+      <th>Price</th>
+      </thead>
+      <tbody>
+      <tr ng-repeat="lyric in lyricsList">
+        <td>{{lyric.artist}}</td>
+        <td>{{lyric.title}}</td>
+        <td>${{lyric.price}}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </section>
