@@ -477,9 +477,19 @@ body {
   margin: 0 150px;
 }
 
-/* submitLyrics Page CSS */
+/*submitLyrics Page CSS  */
 .submitLyricsForm {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
+  width: 30em;
+}
+
+.submitLyricsForm #inputPrice, #genreDropDown {
+  width: 10em;
+}
+
+.submitLyricsForm .form-group {
+  margin-top: 2.5em;
+}
+
+.submitLyricsForm .btn {
+  margin-top: 1em;
 }
