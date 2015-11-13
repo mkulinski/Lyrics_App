@@ -472,6 +472,15 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(34, 34, 34, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 34, 34, 0.6);
+  outline: 0 none;
+}
 /* lyricList Page CSS */
 .lyricListTable {
   margin: 0 150px;
