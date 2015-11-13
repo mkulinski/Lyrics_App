@@ -29,6 +29,11 @@ angular
         controller: 'LyriclistCtrl',
         controllerAs: 'lyricList'
       })
+      .when('/submitLyrics', {
+        templateUrl: 'views/submitLyrics.html',
+        controller: 'SubmitlyricsCtrl',
+        controllerAs: 'submitLyrics'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -24,7 +24,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,11 +77,10 @@
           <h1>Buy and Sell Original Song Lyrics</h1>
           <hr>
           <a href="#lyricList" class="btn btn-primary btn-xl">Buy Lyrics</a>
-          <a href="#about" class="btn btn-primary btn-xl">Sell Lyrics</a>
+          <a href="#submitLyrics" class="btn btn-primary btn-xl">Sell Lyrics</a>
         </div>
       </div>
     </header>
-
 
     <div class="main-container" ng-view></div>
 
@@ -119,8 +117,10 @@
     <script src="js/creative.js"></script>
 
     <!--Controllers-->
+    <script src="scripts/controllers/submitlyrics.js"></script>
     <script src="scripts/controllers/lyriclist.js"></script>
     <script src="scripts/controllers/main.js"></script>
+
 
 </body>
 

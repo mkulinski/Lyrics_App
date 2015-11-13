@@ -472,3 +472,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+/* lyricList Page CSS */
+.lyricListTable {
+  margin: 0 150px;
+}
+
+/* submitLyrics Page CSS */
+.submitLyricsForm {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
